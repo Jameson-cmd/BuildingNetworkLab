@@ -116,51 +116,42 @@ With a Copper Straight-Through cable connect Switch0 to the Router(using Gigabit
  
 <img src="https://i.imgur.com/CDU0IdK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<br />
+
 <h2>Configure the all PCs</h2>
 
 - <b> Click on the PC0 and navigate to the desktop.
-    <br />
 - <b> Click on IP Configuration
-    <br />
-- <b> Type in IP address 192.168.1.10 subnet mask 255.255.255.0
-    <br />
-
+- <b> Type in IP address 192.168.1.10 subnet mask 255.255.255.0 
 - <b> The default gateway will be your exiting router(192.168.1.1)
+ <br />
   <img src="https://i.imgur.com/ygPnc7F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-    <br />
+   
 - <b> click on the PC1 and  navigate to the desktop.
-    <br />
-
-- <b> click on IP Configuration
-    <br />
+- <b> click on IP Configuration 
 - <b> Type in IP address 192.168.1.11 subnet mask 255.255.255.0
-    <br />
-
 - <b> The default gateway will be your exiting router(192.168.1.1)
+<br />
   <img src="https://i.imgur.com/SOqm5pw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-    <br />
-
+    
 - <b> Click on the PC2 and  navigate to the desktop.
-
 - <b> Click on IP Configuration
-    <br />
 - <b> Type in IP address 192.168.2.10 subnet mask 255.255.255.0
-    <br />
-
 - <b> The default gateway will be your exiting router(192.168.2.1)
+<br /> 
   <img src="https://i.imgur.com/hJ4BKiL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-    <br />
-
-
+    
 - <b> Click on the PC3 and  navigate to the desktop.
-
 - <b> Click on IP Configuration
-    <br />
 - <b> Type in IP address 192.168.2.11 subnet mask 255.255.255.0
-    <br />
-
 - <b> The default gateway will be your exiting router(192.168.2.1)
+<br />
   <img src="https://i.imgur.com/HkVF20A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-    <br />
+    
+<h2>Connection is now established</h2>
+<b> Now check the connection by sending a PDU from PC0 to the Router, PC02 - Router, PC0 - PC2.
+
+<br />
+  <img src="https://i.imgur.com/DVWKLPa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
 
