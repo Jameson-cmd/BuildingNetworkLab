@@ -74,12 +74,38 @@ With a Copper Straight-Through cable connect Switch0 to the Router(using Gigabit
 <br />
 <br />
 
-- <b>Double click your newly created VM</b> 
-- <b>Choose the virtual optical disk file and select the server that youve downloaded(sever2019 iso)</b>
-- <b>After installation is complete, you must complete the windows setup</b>
-- <b> Once complete, You will be prompt to create a administration account.(enter a password)</br>
+
+
+
+<h2>Configure the Router</h2>
+- <b>Click on the router and navigate to the CLI tab</b>
+
+- <b>You will be prompt with a message that reads "would you like to enter the initial configuration dialog?
+- <b> Type no and click enter</br>
+<img src="https://i.imgur.com/ffsIQx6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+- <b> Now in the user excution mode type "enable" and press enter
+<img src="https://i.imgur.com/pBoEnY6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+- <b> Now you are in the privleged mode. Type "configure terminal" and press enter.
+  <br />
+<br />
+- <b> Now you are in the global configuration mode. This is where you configure the interface.(type interface g0/0 and click enter)
+<img src="https://i.imgur.com/MtunX1f.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <br />
+<br />
+- <b> Next you will assign an IP address.(type ip address 192.168.1.1 and the subnet mask 255.255.255.0) and press enter.
+   <br />
+
+- <b> next type no shutdown and press enter.
+- <b> Now you can see interface g0/0 has changed to up.This means this port is now configured.
+
+<img src="https://i.imgur.com/ORuW8my.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <br />
+
+
 Set up Internal IP address:<br />
 - <b> Navigate to the network icon at the bottom right of your screen</br>
 - <b>Click network<br />
