@@ -27,13 +27,13 @@ Create Our Topology: <br/>
 <br />
 
 
-Use the Copper Straight-Through cable to connect PC0 and PC1 to Switch0(using FastEthernet0) : <br/>
+Use the Copper Straight-Through cable to connect PC0 and PC1 to Switch0(using FastEthernet0)  <br/>
 <img src="https://i.imgur.com/Ijs6xXG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
 
-Connect Switch0 to PC0 and PC1(using FastEthernet0/1 and FastEthernet0/2) : <br/>
+Connect Switch0 to PC0 and PC1(using FastEthernet0/1 and FastEthernet0/2)  <br/>
 <img src="https://i.imgur.com/Ijs6xXG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/tpIZGih.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -53,7 +53,7 @@ Connect PC2 and PC3 to Switch1(using FastEthernet0 to FastEthernet0/2) <br/>
 <br />
 <br />
 
-Connect Switch1 to PC2 and PC3(using FastEthernet0/1 to FastEthernet0/2) : <br/>
+Connect Switch1 to PC2 and PC3(using FastEthernet0/1 to FastEthernet0/2)  <br/>
 <img src="https://i.imgur.com/MYPfl08.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/SrID0Y1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -78,71 +78,89 @@ With a Copper Straight-Through cable connect Switch0 to the Router(using Gigabit
 
 
 <h2>Configure the Router</h2>
-- <b>Click on the router and navigate to the CLI tab</b>
+
+- <b>Click on the router and navigate to the CLI tab
+  </b>
 
 - <b>You will be prompt with a message that reads "would you like to enter the initial configuration dialog?
 - <b> Type no and click enter</br>
 <img src="https://i.imgur.com/ffsIQx6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-- <b> Now in the user excution mode type "enable" and press enter
+  <b> Now in the user excution mode type "enable" and press enter
+  <br />
 <img src="https://i.imgur.com/pBoEnY6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-- <b> Now you are in the privleged mode. Type "configure terminal" and press enter.
+  <b> Now you are in the privleged mode. Type "configure terminal" and press enter.
   <br />
 <br />
-- <b> Now you are in the global configuration mode. This is where you configure the interface.(type interface g0/0 and click enter)
+  <b> Now you are in the global configuration mode. This is where you configure the interface.(type interface g0/0 and click enter)
 <img src="https://i.imgur.com/MtunX1f.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <br />
 <br />
-- <b> Next you will assign an IP address.(type ip address 192.168.1.1 and the subnet mask 255.255.255.0) and press enter.
-   <br />
+  <b> Next you will assign an IP address.(type ip address 192.168.1.1 and the subnet mask 255.255.255.0) and press enter.
+  
 
-- <b> next type no shutdown and press enter.
+- <b> Next type no shutdown and press enter.
 - <b> Now you can see interface g0/0 has changed to up.This means this port is now configured.
 
 <img src="https://i.imgur.com/ORuW8my.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <br />
 
+<b> Now type exit to navigate back to you the global configuration mode. This is where you will configure the next interface.(type interface g0/1 and click enter)
+- <b> Next you will assign another IP address.(type ip address 192.168.2.1 and the subnet mask 255.255.255.0) and press enter.
+   <br />
+- <b> Next type no shutdown and press enter.
+- <b> Now you can see interface g0/1 has changed to up.This means this port is now configured.
+ 
+<img src="https://i.imgur.com/CDU0IdK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-Set up Internal IP address:<br />
-- <b> Navigate to the network icon at the bottom right of your screen</br>
-- <b>Click network<br />
-- <b>Click change adapter options<br />
-- <b> Name your networks(Internet & Internal)<br />
-- <b> To figure out which network Internet & which is the Internal right click and select properties. <br />
-- <b> Now you must give the internal network an ip address. <br />
-- <b> right click the internal network and select properties<br />
-- <b> Click Internet Protocal Version 4(TCP/IPv4) <br />
-- <b> Assign a IP address(172.16.0.1) and subnet mask(255.255.255.0) <br />
-- <b> For the preferred DNS server enter its IP address(172.16.0.1) <br />
-<img src="https://i.imgur.com/LT7cdsg.png?1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<h2>Configure the all PCs</h2>
+
+- <b> Click on the PC0 and navigate to the desktop.
+    <br />
+- <b> Click on IP Configuration
+    <br />
+- <b> Type in IP address 192.168.1.10 subnet mask 255.255.255.0
+    <br />
+
+- <b> The default gateway will be your exiting router(192.168.1.1)
+  <img src="https://i.imgur.com/ygPnc7F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+    <br />
+- <b> click on the PC1 and  navigate to the desktop.
+    <br />
+
+- <b> click on IP Configuration
+    <br />
+- <b> Type in IP address 192.168.1.11 subnet mask 255.255.255.0
+    <br />
+
+- <b> The default gateway will be your exiting router(192.168.1.1)
+  <img src="https://i.imgur.com/SOqm5pw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+    <br />
+
+- <b> Click on the PC2 and  navigate to the desktop.
+
+- <b> Click on IP Configuration
+    <br />
+- <b> Type in IP address 192.168.2.10 subnet mask 255.255.255.0
+    <br />
+
+- <b> The default gateway will be your exiting router(192.168.2.1)
+  <img src="https://i.imgur.com/hJ4BKiL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+    <br />
 
 
-Install Active Directory Domain Serves: <br />
-- <b> Navigate to server manager dashboard by clicking on the start menu then clicking server manager </br>
-- <b> Click add roles and features</br>
-<img src="https://i.imgur.com/fOYce8T.png?1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- <b> Click on the PC3 and  navigate to the desktop.
 
-- <b> Pick the server you want to install</br>
-<img src="https://i.imgur.com/KZpRXWn.png?1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- <b> Click on IP Configuration
+    <br />
+- <b> Type in IP address 192.168.2.11 subnet mask 255.255.255.0
+    <br />
 
+- <b> The default gateway will be your exiting router(192.168.2.1)
+  <img src="https://i.imgur.com/HkVF20A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+    <br />
 
-
-
-
- Rename this PC: <br />
-  - <b> Right click the start menu and click system<br />
-   - <b> Click rename this PC<br />
-</p>
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
